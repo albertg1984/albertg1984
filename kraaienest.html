@@ -28,9 +28,12 @@
 			slotMaxTime: '18:00:00',
 			slotDuration: '0:30:00',
 			height: 'auto',
-			nowIndicator: true
+			nowIndicator: true,
+			eventDataTransform: function( eventData ) {
+			  eventData.title='Open';
+			}
 		  });
-
+		  
 		  calendar.render();
 		});
     </script>
