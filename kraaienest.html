@@ -26,6 +26,9 @@
                 eventDataTransform: function( eventData ) {
                   if (eventData.title === undefined) {
                     eventData.title='Open';
+                  } else {
+                    eventData.backgroundColor="rgb(239, 108, 0)";
+                    eventData.borderColor="rgb(239, 108, 0)";
                   }
                   delete eventData.url;
                 }
